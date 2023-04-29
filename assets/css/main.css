@@ -3393,8 +3393,8 @@ input, select, textarea {
 		#intro p {
 			font-size: 1.25rem;
 			font-style: italic;
-			margin-top: 0rem;
-			margin-bottom: 15rem;
+			margin-top: 10rem;
+			margin-bottom: 1rem;
 			text-align: center;
 		}
 
