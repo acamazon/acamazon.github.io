@@ -3779,9 +3779,14 @@ input, select, textarea {
 		position: relative;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
+		cursor: default;
 		z-index: 2;
 	}
-
+	#nav2:after {
+		content: '';
+		display: block;
+		width: 100%;
+	}
 		#nav2 ul.divided li {
 			border-top-color: #ffffff;
 		}
@@ -3856,7 +3861,8 @@ input, select, textarea {
 		}
 
 			#nav2 ul.links li {
-				display: block;
+				position: relative;
+				display: inline-block;
 				padding-left: 0;
 			}
 				#nav2 ul.links li a {
@@ -3869,10 +3875,39 @@ input, select, textarea {
 					outline: none;
 					padding: 0 2rem;
 				}
-
 					#nav2 ul.links li a:hover {
 						color: inherit !important;
 						background-color: rgba(255, 255, 255, 0.1);
+					}
+				
+				#nav2 ul.links li:first-child {
+						margin-left: 0;
+					}
+				#nav2 ul.links li:hover a {
+						color: #fff;
+					}
+				#nav2 ul.links li.current {
+						font-weight: 600;
+					}
+
+					#nav2 ul.links li.current:before {
+						-moz-transform: rotateZ(45deg);
+						-webkit-transform: rotateZ(45deg);
+						-ms-transform: rotateZ(45deg);
+						transform: rotateZ(45deg);
+						width: 0.75em;
+						height: 0.75em;
+						content: '';
+						display: block;
+						position: absolute;
+						bottom: -0.5em;
+						left: 50%;
+						margin-left: -0.375em;
+						background-color: #37c0fb;;
+					}
+
+					#nav2 ul.links li.current a {
+						color: #fff;
 					}
 
 				#nav2 ul.links li.active {
@@ -3881,6 +3916,10 @@ input, select, textarea {
 
 					#nav2 ul.links li.active a {
 						color: #1e252d;
+					}
+
+					#nav2 ul.links li.active.current:before {
+						opacity: 0;
 					}
 
 						#nav2 ul.links li.active a:hover {
