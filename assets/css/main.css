@@ -3856,25 +3856,8 @@ input, select, textarea {
 		}
 
 			#nav2 ul.links li {
-			display: -moz-flex;
-			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
-			-moz-flex-grow: 1;
-			-webkit-flex-grow: 1;
-			-ms-flex-grow: 1;
-			flex-grow: 1;
-			-moz-flex-shrink: 1;
-			-webkit-flex-shrink: 1;
-			-ms-flex-shrink: 1;
-			flex-shrink: 1;
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
-			font-weight: 900;
-			letter-spacing: 0.075em;
-			list-style: none;
-			margin-bottom: 0;
-			padding-left: 0;
-			text-transform: uppercase;
+				display: block;
+				padding-left: 0;
 			}
 				#nav2 ul.links li a {
 					-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -3908,6 +3891,7 @@ input, select, textarea {
 			display: -webkit-flex;
 			display: -ms-flex;
 			display: flex;
+			display: inline-block;
 			-moz-flex-grow: 1;
 			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
@@ -3928,6 +3912,7 @@ input, select, textarea {
 			#nav2 ul.tree li {
 				display: block;
 				padding-left: 0;
+				position:relative;
 			}
 
 				#nav2 ul.tree li a {
@@ -3957,6 +3942,8 @@ input, select, textarea {
 						#nav2 ul.tree li.active a:hover {
 							color: #18bfef !important;
 						}
+			
+		
 
 		#nav2 ul.icons {
 			-moz-flex-grow: 0;
@@ -3968,6 +3955,43 @@ input, select, textarea {
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
 			margin-bottom: 0;
+		}
+
+		#nav2 .dropbtn {
+			  background-color: #4CAF50;
+			  color: white;
+			  padding: 16px;
+			  font-size: 16px;
+			  border: none;
+			  cursor: pointer;
+		}
+		#nav2 .dropdown {
+  			position: relative;
+  			display: inline-block;
+		}
+		#nav2 .dropdown-content {
+		  	display: none;
+	  		position: absolute;
+		  	background-color: #f9f9f9;
+		  	min-width: 160px;
+		  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  	padding: 12px 16px;
+		  	z-index: 1;
+			}
+
+		#nav2 .dropdown-content a {
+				  color: black;
+				  padding: 12px 16px;
+				  text-decoration: none;
+				  display: block;
+			}
+
+		#nav2 .dropdown-content a:hover {background-color: #f1f1f1}
+		#nav2 .dropdown:hover .dropdown-content {
+		  display: block;
+		}
+		#nav2 .dropdown:hover .dropbtn {
+		  background-color: #3e8e41;
 		}
 
 		@media screen and (max-width: 980px) {
