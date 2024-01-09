@@ -3234,7 +3234,7 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/hudf.jpeg");
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -3386,17 +3386,14 @@ input, select, textarea {
 				}
 
 		#intro h1 {
-			margin-top: -15rem;
-			margin-bottom: 5rem;
 			font-size: 5rem;
 			line-height: 1;
 		}
 
 		#intro p {
-			font-size: 1.5rem;
+			font-size: 1.25rem;
 			font-style: italic;
-			margin-top: -5rem;
-			margin-bottom: 10rem;
+			margin-top: -0.25rem;
 			text-align: center;
 		}
 
@@ -3756,7 +3753,6 @@ input, select, textarea {
 
 		}
 
-
 /* Main */
 
 	#main {
@@ -3767,76 +3763,76 @@ input, select, textarea {
 		max-width: 72rem;
 		z-index: 2;
 	}
+        #main ul.navPage {
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            -moz-transition: -moz-transform 1s ease, opacity 1s ease;
+            -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
+            -ms-transition: -ms-transform 1s ease, opacity 1s ease;
+            transition: transform 1s ease, opacity 1s ease;
+            -moz-flex-grow: 1;
+            -webkit-flex-grow: 1;
+            -ms-flex-grow: 1;
+            flex-grow: 1;
+            -moz-flex-shrink: 1;
+            -webkit-flex-shrink: 1;
+            -ms-flex-shrink: 1;
+            flex-shrink: 1;
+            background: rgba(255, 255, 255, 0.175);
+            height: 4rem;
+            line-height: 4rem;
+            margin: 0rem auto 0rem auto;
+            overflow: hidden;
+            padding: 0 2rem 0 0;
+            position: relative;
+            width: calc(100%);
+            max-width: 72rem;
+            font-family: "Source Sans Pro", Helvetica, sans-serif;
+            font-weight: 900;
+            letter-spacing: 0.075em;
+            list-style: none;
+            margin-bottom: 0;
+            padding-left: 0;
+            z-index: 2;
+            text-transform: uppercase;
+        }
 
-		#main ul.navPage {
-		            display: -moz-flex;
-		            display: -webkit-flex;
-		            display: -ms-flex;
-		            display: flex;
-		            -moz-transition: -moz-transform 1s ease, opacity 1s ease;
-		            -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
-		            -ms-transition: -ms-transform 1s ease, opacity 1s ease;
-		            transition: transform 1s ease, opacity 1s ease;
-		            -moz-flex-grow: 1;
-		            -webkit-flex-grow: 1;
-		            -ms-flex-grow: 1;
-		            flex-grow: 1;
-		            -moz-flex-shrink: 1;
-		            -webkit-flex-shrink: 1;
-		            -ms-flex-shrink: 1;
-		            flex-shrink: 1;
-		            background: rgba(255, 255, 255, 0.175);
-		            height: 4rem;
-		            line-height: 4rem;
-		            margin: 0rem auto 0rem auto;
-		            overflow: hidden;
-		            padding: 0 2rem 0 0;
-		            position: relative;
-		            width: calc(100%);
-		            max-width: 72rem;
-		            font-family: "Source Sans Pro", Helvetica, sans-serif;
-		            font-weight: 900;
-		            letter-spacing: 0.075em;
-		            list-style: none;
-		            margin-bottom: 0;
-		            padding-left: 0;
-		            z-index: 2;
-		            text-transform: uppercase;
-		        }
-		
-		            #main ul.navPage li {
-		                display: block;
-		                padding-left: 0;
-		            }
-		
-		                #main ul.navPage li a {
-		                    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		                    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		                    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		                    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		                    display: block;
-		                    font-size: 0.8rem;
-		                    outline: none;
-		                    padding: 0 2rem;
-		                }
-		
-		                    #main ul.navPage li a:hover {
-		                        color: #18bfef !important;
-		                        background-color: rgba(0,0,0, 0.1);
-		                        
-		                    }
-		
-		                #main ul.navPage li.active {
-		                    background-color: rgba(0,0,0, 0.3);
-		                }
-		
-		                    #main ul.navPage li.active a {
-		                        color: #1e252d;
-		                    }
-		
-		                        #main ul.navPage li.active a:hover {
-		                            color: #18bfef !important;
-		                        }
+            #main ul.navPage li {
+                display: block;
+                padding-left: 0;
+            }
+
+                #main ul.navPage li a {
+                    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+                    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+                    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+                    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+                    display: block;
+                    font-size: 0.8rem;
+                    outline: none;
+                    padding: 0 2rem;
+                }
+
+                    #main ul.navPage li a:hover {
+                        color: #18bfef !important;
+                        background-color: rgba(0,0,0, 0.1);
+                        
+                    }
+
+                #main ul.navPage li.active {
+                    background-color: rgba(0,0,0, 0.3);
+                }
+
+                    #main ul.navPage li.active a {
+                        color: #1e252d;
+                    }
+
+                        #main ul.navPage li.active a:hover {
+                            color: #18bfef !important;
+                        }
+
 		#main > * {
 			padding: 4rem 4rem 2rem 4rem ;
 			border-top: solid 2px #eeeeee;
