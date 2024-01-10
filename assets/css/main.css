@@ -1357,6 +1357,10 @@ input, select, textarea {
 					margin-left: 8.33333%;
 				}
 
+				.row > .off-05-small {
+					margin-left: 5%;
+				}
+
 				.row > .col-2-small {
 					width: 16.66667%;
 				}
